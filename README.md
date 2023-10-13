@@ -1,0 +1,3 @@
+# SWARC
+
+University management - regional
