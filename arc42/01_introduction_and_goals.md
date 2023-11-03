@@ -17,82 +17,82 @@ architects and development team must consider. These include
 
 **Contents**
 
-Short description of the functional requirements, driving forces,
-extract (or abstract) of requirements. Link to (hopefully existing)
-requirements documents (with version number and information where to
-find it).
+Students can enroll in a course.
 
 **Motivation**
 
-From the point of view of the end users a system is created or modified
-to improve support of a business activity and/or improve the quality.
+
 
 **Form**
 
-Short textual description, probably in tabular use-case format. If
-requirements documents exist this overview should refer to these
-documents.
+**Contents**
 
-Keep these excerpts as short as possible. Balance readability of this
-document with potential redundancy w.r.t to requirements documents.
+Faculty member can track attendance and manage grades.
 
-See [Introduction and Goals](https://docs.arc42.org/section-1/) in the
-arc42 documentation.
+**Motivation**
+
+Easily manage a lot of students and get a compact overview of a class.
+
+**Form**
+
+**Contents**
+
+Lecturer can upload material; student can access said material
+
+**Motivation**
+
+**Form**
+
+**Contents**
+
+Generate general report of attendance and progress of students
+
+**Motivation**
+
+**Form**
+
+**Contents**
+
+Educational Service Providers provide services to students
+
+**Motivation**
+
+**Form**
 
 ## Quality Goals
 
-**Contents**
-
-The top three (max five) quality goals for the architecture whose
-fulfillment is of highest importance to the major stakeholders. We
-really mean quality goals for the architecture. Don’t confuse them with
-project goals. They are not necessarily identical.
-
-Consider this overview of potential topics (based upon the ISO 25010
-standard):
-
-![Categories of Quality
-Requirements](images/01_2_iso-25010-topics-EN.drawio.png)
-
-**Motivation**
-
-You should know the quality goals of your most important stakeholders,
-since they will influence fundamental architectural decisions. Make sure
-to be very concrete about these qualities, avoid buzzwords. If you as an
-architect do not know how the quality of your work will be judged…
-
-**Form**
-
-A table with quality goals and concrete scenarios, ordered by priorities
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 40%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Priority</th>
+<th style="text-align: left;">Quality</th>
+<th style="text-align: left;">Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><p><em>1</em></p></td>
+<td style="text-align: left;"><p><em>Accessibly 24/7</em></p></td>
+<td style="text-align: left;"><p><em>Deadlines must be met, Accessing crucial information</em></p></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><p><em>2</em></p></td>
+<td style="text-align: left;"><p><em>No documentation necessary</em></p></td>
+<td style="text-align: left;"><p><em>Improve Useability</em></p></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><p><em>3</em></p></td>
+<td style="text-align: left;"><p><em>Scaleability</em></p></td>
+<td style="text-align: left;"><p><em>Departments/Faculty can be easiliy added/removed</em></p></td>
+</tbody>
+</table>
 
 ## Stakeholders
-
-**Contents**
-
-Explicit overview of stakeholders of the system, i.e. all person, roles
-or organizations that
-
--   should know the architecture
-
--   have to be convinced of the architecture
-
--   have to work with the architecture or with code
-
--   need the documentation of the architecture for their work
-
--   have to come up with decisions about the system or its development
-
-**Motivation**
-
-You should know all parties involved in development of the system or
-affected by the system. Otherwise, you may get nasty surprises later in
-the development process. These stakeholders determine the extent and the
-level of detail of your work and its results.
-
-**Form**
-
-Table with role names, person names, and their expectations with respect
-to the architecture and its documentation.
 
 <table>
 <colgroup>
@@ -103,20 +103,30 @@ to the architecture and its documentation.
 <thead>
 <tr class="header">
 <th style="text-align: left;">Role/Name</th>
-<th style="text-align: left;">Contact</th>
 <th style="text-align: left;">Expectations</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><p><em>&lt;Role-1&gt;</em></p></td>
-<td style="text-align: left;"><p><em>&lt;Contact-1&gt;</em></p></td>
-<td style="text-align: left;"><p><em>&lt;Expectation-1&gt;</em></p></td>
+<td style="text-align: left;"><p><em>Students</em></p></td>
+<td style="text-align: left;"><p><em>Enroll courses / access material</em></p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><p><em>&lt;Role-2&gt;</em></p></td>
-<td style="text-align: left;"><p><em>&lt;Contact-2&gt;</em></p></td>
-<td style="text-align: left;"><p><em>&lt;Expectation-2&gt;</em></p></td>
+<td style="text-align: left;"><p><em>Lecturers</em></p></td>
+<td style="text-align: left;"><p><em>Upload materials</em></p></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><p><em>Faculty members</em></p></td>
+<td style="text-align: left;"><p><em>Track attendance / manage grades</em></p></td>
+</tr>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><p><em>Administrators</em></p></td>
+<td style="text-align: left;"><p><em>General reports</em></p></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><p><em>Educational Service Providers</em></p></td>
+<td style="text-align: left;"><p><em>Provide services to students</em></p></td>
 </tr>
 </tbody>
 </table>
