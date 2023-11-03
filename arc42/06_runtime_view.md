@@ -1,68 +1,61 @@
-# Laufzeitsicht
+# Runtime View
 
-**Inhalt**
+**Contents**
 
-Diese Sicht erklärt konkrete Abläufe und Beziehungen zwischen Bausteinen
-in Form von Szenarien aus den folgenden Bereichen:
+The runtime view describes concrete behavior and interactions of the
+system’s building blocks in form of scenarios from the following areas:
 
--   Wichtige Abläufe oder *Features*: Wie führen die Bausteine der
-    Architektur die wichtigsten Abläufe durch?
+-   important use cases or features: how do building blocks execute
+    them?
 
--   Interaktionen an kritischen externen Schnittstellen: Wie arbeiten
-    Bausteine mit Nutzern und Nachbarsystemen zusammen?
+-   interactions at critical external interfaces: how do building blocks
+    cooperate with users and neighboring systems?
 
--   Betrieb und Administration: Inbetriebnahme, Start, Stop.
+-   operation and administration: launch, start-up, stop
 
--   Fehler- und Ausnahmeszenarien
+-   error and exception scenarios
 
-Anmerkung: Das Kriterium für die Auswahl der möglichen Szenarien (d.h.
-Abläufe) des Systems ist deren Architekturrelevanz. Es geht nicht darum,
-möglichst viele Abläufe darzustellen, sondern eine angemessene Auswahl
-zu dokumentieren.
+Remark: The main criterion for the choice of possible scenarios
+(sequences, workflows) is their **architectural relevance**. It is
+**not** important to describe a large number of scenarios. You should
+rather document a representative selection.
 
 **Motivation**
 
-Sie sollten verstehen, wie (Instanzen von) Bausteine(n) Ihres Systems
-ihre jeweiligen Aufgaben erfüllen und zur Laufzeit miteinander
-kommunizieren.
-
-Nutzen Sie diese Szenarien in der Dokumentation hauptsächlich für eine
-verständlichere Kommunikation mit denjenigen Stakeholdern, die die
-statischen Modelle (z.B. Bausteinsicht, Verteilungssicht) weniger
-verständlich finden.
+You should understand how (instances of) building blocks of your system
+perform their job and communicate at runtime. You will mainly capture
+scenarios in your documentation to communicate your architecture to
+stakeholders that are less willing or able to read and understand the
+static models (building block view, deployment view).
 
 **Form**
 
-Für die Beschreibung von Szenarien gibt es zahlreiche
-Ausdrucksmöglichkeiten. Nutzen Sie beispielsweise:
+There are many notations for describing scenarios, e.g.
 
--   Nummerierte Schrittfolgen oder Aufzählungen in Umgangssprache
+-   numbered list of steps (in natural language)
 
--   Aktivitäts- oder Flussdiagramme
+-   activity diagrams or flow charts
 
--   Sequenzdiagramme
+-   sequence diagrams
 
--   BPMN (Geschäftsprozessmodell und -notation) oder EPKs
-    (Ereignis-Prozessketten)
+-   BPMN or EPCs (event process chains)
 
--   Zustandsautomaten
+-   state machines
 
 -   …
 
-Siehe [Laufzeitsicht](https://docs.arc42.org/section-6/) in der
-online-Dokumentation (auf Englisch!).
+See [Runtime View](https://docs.arc42.org/section-6/) in the arc42
+documentation.
 
-## *&lt;Bezeichnung Laufzeitszenario 1>*
+## &lt;Runtime Scenario 1>
 
--   &lt;hier Laufzeitdiagramm oder Ablaufbeschreibung einfügen>
+-   *&lt;insert runtime diagram or textual description of the scenario>*
 
--   &lt;hier Besonderheiten bei dem Zusammenspiel der Bausteine in
-    diesem Szenario erläutern>
+-   *&lt;insert description of the notable aspects of the interactions
+    between the building block instances depicted in this diagram.>*
 
-## *&lt;Bezeichnung Laufzeitszenario 2>*
+## &lt;Runtime Scenario 2>
 
-…
+## …
 
-## *&lt;Bezeichnung Laufzeitszenario n>*
-
-…
+## &lt;Runtime Scenario n>

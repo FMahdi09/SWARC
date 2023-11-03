@@ -1,92 +1,88 @@
-# Bausteinsicht
+# Building Block View
 
-**Inhalt**
+**Content**
 
-Die Bausteinsicht zeigt die statische Zerlegung des Systems in Bausteine
-(Module, Komponenten, Subsysteme, Klassen, Schnittstellen, Pakete,
-Bibliotheken, Frameworks, Schichten, Partitionen, Tiers, Funktionen,
-Makros, Operationen, Datenstrukturen, …) sowie deren Abhängigkeiten
-(Beziehungen, Assoziationen, …)
+The building block view shows the static decomposition of the system
+into building blocks (modules, components, subsystems, classes,
+interfaces, packages, libraries, frameworks, layers, partitions, tiers,
+functions, macros, operations, data structures, …) as well as their
+dependencies (relationships, associations, …)
 
-Diese Sicht sollte in jeder Architekturdokumentation vorhanden sein. In
-der Analogie zum Hausbau bildet die Bausteinsicht den *Grundrissplan*.
+This view is mandatory for every architecture documentation. In analogy
+to a house this is the *floor plan*.
 
 **Motivation**
 
-Behalten Sie den Überblick über den Quellcode, indem Sie die statische
-Struktur des Systems durch Abstraktion verständlich machen.
+Maintain an overview of your source code by making its structure
+understandable through abstraction.
 
-Damit ermöglichen Sie Kommunikation auf abstrakterer Ebene, ohne zu
-viele Implementierungsdetails offenlegen zu müssen.
+This allows you to communicate with your stakeholder on an abstract
+level without disclosing implementation details.
 
 **Form**
 
-Die Bausteinsicht ist eine hierarchische Sammlung von Blackboxen und
-Whiteboxen (siehe Abbildung unten) und deren Beschreibungen.
+The building block view is a hierarchical collection of black boxes and
+white boxes (see figure below) and their descriptions.
 
-![Hierarchie in der Bausteinsicht](images/05_building_blocks-DE.png)
+![Hierarchy of building blocks](images/05_building_blocks-EN.png)
 
-**Ebene 1** ist die Whitebox-Beschreibung des Gesamtsystems, zusammen
-mit Blackbox-Beschreibungen der darin enthaltenen Bausteine.
+**Level 1** is the white box description of the overall system together
+with black box descriptions of all contained building blocks.
 
-**Ebene 2** zoomt in einige Bausteine der Ebene 1 hinein. Sie enthält
-somit die Whitebox-Beschreibungen ausgewählter Bausteine der Ebene 1,
-jeweils zusammen mit Blackbox-Beschreibungen darin enthaltener
-Bausteine.
+**Level 2** zooms into some building blocks of level 1. Thus it contains
+the white box description of selected building blocks of level 1,
+together with black box descriptions of their internal building blocks.
 
-**Ebene 3** zoomt in einige Bausteine der Ebene 2 hinein, usw.
+**Level 3** zooms into selected building blocks of level 2, and so on.
 
-Siehe [Bausteinsicht](https://docs.arc42.org/section-5/) in der
-online-Dokumentation (auf Englisch!).
+See [Building Block View](https://docs.arc42.org/section-5/) in the
+arc42 documentation.
 
-## Whitebox Gesamtsystem
+## Whitebox Overall System
 
-An dieser Stelle beschreiben Sie die Zerlegung des Gesamtsystems anhand
-des nachfolgenden Whitebox-Templates. Dieses enthält:
+Here you describe the decomposition of the overall system using the
+following white box template. It contains
 
--   Ein Übersichtsdiagramm
+-   an overview diagram
 
--   die Begründung dieser Zerlegung
+-   a motivation for the decomposition
 
--   Blackbox-Beschreibungen der hier enthaltenen Bausteine. Dafür haben
-    Sie verschiedene Optionen:
+-   black box descriptions of the contained building blocks. For these
+    we offer you alternatives:
 
-    -   in *einer* Tabelle, gibt einen kurzen und pragmatischen
-        Überblick über die enthaltenen Bausteine sowie deren
-        Schnittstellen.
+    -   use *one* table for a short and pragmatic overview of all
+        contained building blocks and their interfaces
 
-    -   als Liste von Blackbox-Beschreibungen der Bausteine, gemäß dem
-        Blackbox-Template (siehe unten). Diese Liste können Sie, je nach
-        Werkzeug, etwa in Form von Unterkapiteln (Text), Unter-Seiten
-        (Wiki) oder geschachtelten Elementen (Modellierungswerkzeug)
-        darstellen.
+    -   use a list of black box descriptions of the building blocks
+        according to the black box template (see below). Depending on
+        your choice of tool this list could be sub-chapters (in text
+        files), sub-pages (in a Wiki) or nested elements (in a modeling
+        tool).
 
--   (optional:) wichtige Schnittstellen, die nicht bereits im
-    Blackbox-Template eines der Bausteine erläutert werden, aber für das
-    Verständnis der Whitebox von zentraler Bedeutung sind. Aufgrund der
-    vielfältigen Möglichkeiten oder Ausprägungen von Schnittstellen
-    geben wir hierzu kein weiteres Template vor. Im schlimmsten Fall
-    müssen Sie Syntax, Semantik, Protokolle, Fehlerverhalten,
-    Restriktionen, Versionen, Qualitätseigenschaften, notwendige
-    Kompatibilitäten und vieles mehr spezifizieren oder beschreiben. Im
-    besten Fall kommen Sie mit Beispielen oder einfachen Signaturen
-    zurecht.
+-   (optional:) important interfaces, that are not explained in the
+    black box templates of a building block, but are very important for
+    understanding the white box. Since there are so many ways to specify
+    interfaces why do not provide a specific template for them. In the
+    worst case you have to specify and describe syntax, semantics,
+    protocols, error handling, restrictions, versions, qualities,
+    necessary compatibilities and many things more. In the best case you
+    will get away with examples or simple signatures.
 
-***&lt;Übersichtsdiagramm>***
+***&lt;Overview Diagram>***
 
-Begründung  
-*&lt;Erläuternder Text>*
+Motivation  
+*&lt;text explanation>*
 
-Enthaltene Bausteine  
-*&lt;Beschreibung der enthaltenen Bausteine (Blackboxen)>*
+Contained Building Blocks  
+*&lt;Description of contained building block (black boxes)>*
 
-Wichtige Schnittstellen  
-*&lt;Beschreibung wichtiger Schnittstellen>*
+Important Interfaces  
+*&lt;Description of important interfaces>*
 
-Hier folgen jetzt Erläuterungen zu Blackboxen der Ebene 1.
+Insert your explanations of black boxes from level 1:
 
-Falls Sie die tabellarische Beschreibung wählen, so werden Blackboxen
-darin nur mit Name und Verantwortung nach folgendem Muster beschrieben:
+If you use tabular form you will only describe your black boxes with
+name and responsibility according to the following schema:
 
 <table>
 <colgroup>
@@ -96,118 +92,117 @@ darin nur mit Name und Verantwortung nach folgendem Muster beschrieben:
 <thead>
 <tr class="header">
 <th style="text-align: left;"><strong>Name</strong></th>
-<th style="text-align: left;"><strong>Verantwortung</strong></th>
+<th style="text-align: left;"><strong>Responsibility</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><p><em>&lt;Blackbox 1&gt;</em></p></td>
+<td style="text-align: left;"><p><em>&lt;black box 1&gt;</em></p></td>
 <td style="text-align: left;"><p> <em>&lt;Text&gt;</em></p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><p><em>&lt;Blackbox 2&gt;</em></p></td>
+<td style="text-align: left;"><p><em>&lt;black box 2&gt;</em></p></td>
 <td style="text-align: left;"><p> <em>&lt;Text&gt;</em></p></td>
 </tr>
 </tbody>
 </table>
 
-Falls Sie die ausführliche Liste von Blackbox-Beschreibungen wählen,
-beschreiben Sie jede wichtige Blackbox in einem eigenen
-Blackbox-Template. Dessen Überschrift ist jeweils der Namen dieser
-Blackbox.
+If you use a list of black box descriptions then you fill in a separate
+black box template for every important building block . Its headline is
+the name of the black box.
 
-### &lt;Name Blackbox 1>
+### &lt;Name black box 1>
 
-Beschreiben Sie die &lt;Blackbox 1> anhand des folgenden
-Blackbox-Templates:
+Here you describe &lt;black box 1> according the the following black box
+template:
 
--   Zweck/Verantwortung
+-   Purpose/Responsibility
 
--   Schnittstelle(n), sofern diese nicht als eigenständige
-    Beschreibungen herausgezogen sind. Hierzu gehören eventuell auch
-    Qualitäts- und Leistungsmerkmale dieser Schnittstelle.
+-   Interface(s), when they are not extracted as separate paragraphs.
+    This interfaces may include qualities and performance
+    characteristics.
 
--   (Optional) Qualitäts-/Leistungsmerkmale der Blackbox, beispielsweise
-    Verfügbarkeit, Laufzeitverhalten o. Ä.
+-   (Optional) Quality-/Performance characteristics of the black box,
+    e.g.availability, run time behavior, ….
 
--   (Optional) Ablageort/Datei(en)
+-   (Optional) directory/file location
 
--   (Optional) Erfüllte Anforderungen, falls Sie Traceability zu
-    Anforderungen benötigen.
+-   (Optional) Fulfilled requirements (if you need traceability to
+    requirements).
 
--   (Optional) Offene Punkte/Probleme/Risiken
+-   (Optional) Open issues/problems/risks
 
-*&lt;Zweck/Verantwortung>*
+*&lt;Purpose/Responsibility>*
 
-*&lt;Schnittstelle(n)>*
+*&lt;Interface(s)>*
 
-*&lt;(Optional) Qualitäts-/Leistungsmerkmale>*
+*&lt;(Optional) Quality/Performance Characteristics>*
 
-*&lt;(Optional) Ablageort/Datei(en)>*
+*&lt;(Optional) Directory/File Location>*
 
-*&lt;(Optional) Erfüllte Anforderungen>*
+*&lt;(Optional) Fulfilled Requirements>*
 
-*&lt;(optional) Offene Punkte/Probleme/Risiken>*
+*&lt;(optional) Open Issues/Problems/Risks>*
 
-### &lt;Name Blackbox 2>
+### &lt;Name black box 2>
 
-*&lt;Blackbox-Template>*
+*&lt;black box template>*
 
-### &lt;Name Blackbox n>
+### &lt;Name black box n>
 
-*&lt;Blackbox-Template>*
+*&lt;black box template>*
 
-### &lt;Name Schnittstelle 1>
-
-…
-
-### &lt;Name Schnittstelle m>
-
-## Ebene 2
-
-Beschreiben Sie den inneren Aufbau (einiger) Bausteine aus Ebene 1 als
-Whitebox.
-
-Welche Bausteine Ihres Systems Sie hier beschreiben, müssen Sie selbst
-entscheiden. Bitte stellen Sie dabei Relevanz vor Vollständigkeit.
-Skizzieren Sie wichtige, überraschende, riskante, komplexe oder
-besonders volatile Bausteine. Normale, einfache oder standardisierte
-Teile sollten Sie weglassen.
-
-### Whitebox *&lt;Baustein 1>*
-
-…zeigt das Innenleben von *Baustein 1*.
-
-*&lt;Whitebox-Template>*
-
-### Whitebox *&lt;Baustein 2>*
-
-*&lt;Whitebox-Template>*
+### &lt;Name interface 1>
 
 …
 
-### Whitebox *&lt;Baustein m>*
+### &lt;Name interface m>
 
-*&lt;Whitebox-Template>*
+## Level 2
 
-## Ebene 3
+Here you can specify the inner structure of (some) building blocks from
+level 1 as white boxes.
 
-Beschreiben Sie den inneren Aufbau (einiger) Bausteine aus Ebene 2 als
-Whitebox.
+You have to decide which building blocks of your system are important
+enough to justify such a detailed description. Please prefer relevance
+over completeness. Specify important, surprising, risky, complex or
+volatile building blocks. Leave out normal, simple, boring or
+standardized parts of your system
 
-Bei tieferen Gliederungen der Architektur kopieren Sie diesen Teil von
-arc42 für die weiteren Ebenen.
+### White Box *&lt;building block 1>*
 
-### Whitebox &lt;\_Baustein x.1\_&gt;
+…describes the internal structure of *building block 1*.
 
-…zeigt das Innenleben von *Baustein x.1*.
+*&lt;white box template>*
 
-*&lt;Whitebox-Template>*
+### White Box *&lt;building block 2>*
 
-### Whitebox &lt;\_Baustein x.2\_&gt;
+*&lt;white box template>*
 
-*&lt;Whitebox-Template>*
+…
 
-### Whitebox &lt;\_Baustein y.1\_&gt;
+### White Box *&lt;building block m>*
 
-*&lt;Whitebox-Template>*
+*&lt;white box template>*
+
+## Level 3
+
+Here you can specify the inner structure of (some) building blocks from
+level 2 as white boxes.
+
+When you need more detailed levels of your architecture please copy this
+part of arc42 for additional levels.
+
+### White Box &lt;\_building block x.1\_&gt;
+
+Specifies the internal structure of *building block x.1*.
+
+*&lt;white box template>*
+
+### White Box &lt;\_building block x.2\_&gt;
+
+*&lt;white box template>*
+
+### White Box &lt;\_building block y.1\_&gt;
+
+*&lt;white box template>*

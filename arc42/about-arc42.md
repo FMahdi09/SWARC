@@ -1,9 +1,9 @@
-**Über arc42**
+**About arc42**
 
-arc42, das Template zur Dokumentation von Software- und
-Systemarchitekturen.
+arc42, the template for documentation of software and system
+architecture.
 
 Template Version {revnumber}. {revremark}, {revdate}
 
 Created, maintained and © by Dr. Peter Hruschka, Dr. Gernot Starke and
-contributors. Siehe <https://arc42.org>.
+contributors. See <https://arc42.org>.

@@ -1,36 +1,35 @@
-# Architekturentscheidungen
+# Architecture Decisions
 
-**Inhalt**
+**Contents**
 
-Wichtige, teure, große oder riskante Architektur- oder
-Entwurfsentscheidungen inklusive der jeweiligen Begründungen. Mit
-"Entscheidungen" meinen wir hier die Auswahl einer von mehreren
-Alternativen unter vorgegebenen Kriterien.
+Important, expensive, large scale or risky architecture decisions
+including rationales. With "decisions" we mean selecting one alternative
+based on given criteria.
 
-Wägen Sie ab, inwiefern Sie Entscheidungen hier zentral beschreiben,
-oder wo eine lokale Beschreibung (z.B. in der Whitebox-Sicht von
-Bausteinen) sinnvoller ist. Vermeiden Sie Redundanz. Verweisen Sie evtl.
-auf Abschnitt 4, wo schon grundlegende strategische Entscheidungen
-beschrieben wurden.
+Please use your judgement to decide whether an architectural decision
+should be documented here in this central section or whether you better
+document it locally (e.g. within the white box template of one building
+block).
+
+Avoid redundancy. Refer to section 4, where you already captured the
+most important decisions of your architecture.
 
 **Motivation**
 
-Stakeholder des Systems sollten wichtige Entscheidungen verstehen und
-nachvollziehen können.
+Stakeholders of your system should be able to comprehend and retrace
+your decisions.
 
 **Form**
 
-Verschiedene Möglichkeiten:
+Various options:
 
 -   ADR ([Documenting Architecture
     Decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions))
-    für jede wichtige Entscheidung
+    for every important decision
 
--   Liste oder Tabelle, nach Wichtigkeit und Tragweite der
-    Entscheidungen geordnet
+-   List or table, ordered by importance and consequences or:
 
--   ausführlicher in Form einzelner Unterkapitel je Entscheidung
+-   more detailed in form of separate sections per decision
 
-Siehe [Architekturentscheidungen](https://docs.arc42.org/section-9/) in
-der arc42 Dokumentation (auf Englisch!). Dort finden Sie Links und
-Beispiele zum Thema ADR.
+See [Architecture Decisions](https://docs.arc42.org/section-9/) in the
+arc42 documentation. There you will find links and examples about ADR.

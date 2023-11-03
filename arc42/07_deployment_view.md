@@ -1,100 +1,99 @@
-# Verteilungssicht
+# Deployment View
 
-**Inhalt**
+**Content**
 
-Die Verteilungssicht beschreibt:
+The deployment view describes:
 
-1.  die technische Infrastruktur, auf der Ihr System ausgeführt wird,
-    mit Infrastrukturelementen wie Standorten, Umgebungen, Rechnern,
-    Prozessoren, Kanälen und Netztopologien sowie sonstigen
-    Bestandteilen, und
+1.  technical infrastructure used to execute your system, with
+    infrastructure elements like geographical locations, environments,
+    computers, processors, channels and net topologies as well as other
+    infrastructure elements and
 
-2.  die Abbildung von (Software-)Bausteinen auf diese Infrastruktur.
+2.  mapping of (software) building blocks to that infrastructure
+    elements.
 
-Häufig laufen Systeme in unterschiedlichen Umgebungen, beispielsweise
-Entwicklung-/Test- oder Produktionsumgebungen. In solchen Fällen sollten
-Sie alle relevanten Umgebungen aufzeigen.
+Often systems are executed in different environments, e.g. development
+environment, test environment, production environment. In such cases you
+should document all relevant environments.
 
-Nutzen Sie die Verteilungssicht insbesondere dann, wenn Ihre Software
-auf mehr als einem Rechner, Prozessor, Server oder Container abläuft
-oder Sie Ihre Hardware sogar selbst konstruieren.
+Especially document a deployment view if your software is executed as
+distributed system with more than one computer, processor, server or
+container or when you design and construct your own hardware processors
+and chips.
 
-Aus Softwaresicht genügt es, auf die Aspekte zu achten, die für die
-Softwareverteilung relevant sind. Insbesondere bei der
-Hardwareentwicklung kann es notwendig sein, die Infrastruktur mit
-beliebigen Details zu beschreiben.
+From a software perspective it is sufficient to capture only those
+elements of an infrastructure that are needed to show a deployment of
+your building blocks. Hardware architects can go beyond that and
+describe an infrastructure to any level of detail they need to capture.
 
 **Motivation**
 
-Software läuft nicht ohne Infrastruktur. Diese zugrundeliegende
-Infrastruktur beeinflusst Ihr System und/oder querschnittliche
-Lösungskonzepte, daher müssen Sie diese Infrastruktur kennen.
+Software does not run without hardware. This underlying infrastructure
+can and will influence a system and/or some cross-cutting concepts.
+Therefore, there is a need to know the infrastructure.
 
-**Form**
+Maybe a highest level deployment diagram is already contained in section
+3.2. as technical context with your own infrastructure as ONE black box.
+In this section one can zoom into this black box using additional
+deployment diagrams:
 
-Das oberste Verteilungsdiagramm könnte bereits in Ihrem technischen
-Kontext enthalten sein, mit Ihrer Infrastruktur als EINE Blackbox. Jetzt
-zoomen Sie in diese Infrastruktur mit weiteren Verteilungsdiagrammen
-hinein:
+-   UML offers deployment diagrams to express that view. Use it,
+    probably with nested diagrams, when your infrastructure is more
+    complex.
 
--   Die UML stellt mit Verteilungsdiagrammen (Deployment diagrams) eine
-    Diagrammart zur Verfügung, um diese Sicht auszudrücken. Nutzen Sie
-    diese, evtl. auch geschachtelt, wenn Ihre Verteilungsstruktur es
-    verlangt.
+-   When your (hardware) stakeholders prefer other kinds of diagrams
+    rather than a deployment diagram, let them use any kind that is able
+    to show nodes and channels of the infrastructure.
 
--   Falls Ihre Infrastruktur-Stakeholder andere Diagrammarten
-    bevorzugen, die beispielsweise Prozessoren und Kanäle zeigen, sind
-    diese hier ebenfalls einsetzbar.
+See [Deployment View](https://docs.arc42.org/section-7/) in the arc42
+documentation.
 
-Siehe [Verteilungssicht](https://docs.arc42.org/section-7/) in der
-online-Dokumentation (auf Englisch!).
+## Infrastructure Level 1
 
-## Infrastruktur Ebene 1
+Describe (usually in a combination of diagrams, tables, and text):
 
-An dieser Stelle beschreiben Sie (als Kombination von Diagrammen mit
-Tabellen oder Texten):
+-   distribution of a system to multiple locations, environments,
+    computers, processors, .., as well as physical connections between
+    them
 
--   die Verteilung des Gesamtsystems auf mehrere Standorte, Umgebungen,
-    Rechner, Prozessoren o. Ä., sowie die physischen Verbindungskanäle
-    zwischen diesen,
+-   important justifications or motivations for this deployment
+    structure
 
--   wichtige Begründungen für diese Verteilungsstruktur,
+-   quality and/or performance features of this infrastructure
 
--   Qualitäts- und/oder Leistungsmerkmale dieser Infrastruktur,
+-   mapping of software artifacts to elements of this infrastructure
 
--   Zuordnung von Softwareartefakten zu Bestandteilen der Infrastruktur
+For multiple environments or alternative deployments please copy and
+adapt this section of arc42 for all relevant environments.
 
-Für mehrere Umgebungen oder alternative Deployments kopieren Sie diesen
-Teil von arc42 für alle wichtigen Umgebungen/Varianten.
+***&lt;Overview Diagram>***
 
-***&lt;Übersichtsdiagramm>***
+Motivation  
+*&lt;explanation in text form>*
 
-Begründung  
-*&lt;Erläuternder Text>*
+Quality and/or Performance Features  
+*&lt;explanation in text form>*
 
-Qualitäts- und/oder Leistungsmerkmale  
-*&lt;Erläuternder Text>*
+Mapping of Building Blocks to Infrastructure  
+*&lt;description of the mapping>*
 
-Zuordnung von Bausteinen zu Infrastruktur  
-*&lt;Beschreibung der Zuordnung>*
+## Infrastructure Level 2
 
-## Infrastruktur Ebene 2
+Here you can include the internal structure of (some) infrastructure
+elements from level 1.
 
-An dieser Stelle können Sie den inneren Aufbau (einiger)
-Infrastrukturelemente aus Ebene 1 beschreiben.
+Please copy the structure from level 1 for each selected element.
 
-Für jedes Infrastrukturelement kopieren Sie die Struktur aus Ebene 1.
+### *&lt;Infrastructure Element 1>*
 
-### *&lt;Infrastrukturelement 1>*
+*&lt;diagram + explanation>*
 
-*&lt;Diagramm + Erläuterungen>*
+### *&lt;Infrastructure Element 2>*
 
-### *&lt;Infrastrukturelement 2>*
-
-*&lt;Diagramm + Erläuterungen>*
+*&lt;diagram + explanation>*
 
 …
 
-### *&lt;Infrastrukturelement n>*
+### *&lt;Infrastructure Element n>*
 
-*&lt;Diagramm + Erläuterungen>*
+*&lt;diagram + explanation>*

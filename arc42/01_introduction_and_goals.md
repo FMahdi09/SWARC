@@ -1,128 +1,122 @@
-# Einführung und Ziele
+# Introduction and Goals
 
-Beschreibt die wesentlichen Anforderungen und treibenden Kräfte, die bei
-der Umsetzung der Softwarearchitektur und Entwicklung des Systems
-berücksichtigt werden müssen.
+Describes the relevant requirements and the driving forces that software
+architects and development team must consider. These include
 
-Dazu gehören:
+-   underlying business goals,
 
--   zugrunde liegende Geschäftsziele,
+-   essential features,
 
--   wesentliche Aufgabenstellungen,
+-   essential functional requirements,
 
--   wesentliche funktionale Anforderungen,
+-   quality goals for the architecture and
 
--   Qualitätsziele für die Architektur und
+-   relevant stakeholders and their expectations
 
--   relevante Stakeholder und deren Erwartungshaltung.
+## Requirements Overview
 
-## Aufgabenstellung
+**Contents**
 
-**Inhalt**
-
-Kurzbeschreibung der fachlichen Aufgabenstellung, treibenden Kräfte,
-Extrakt (oder Abstract) der Anforderungen. Verweis auf (hoffentlich
-vorliegende) Anforderungsdokumente (mit Versionsbezeichnungen und
-Ablageorten).
+Short description of the functional requirements, driving forces,
+extract (or abstract) of requirements. Link to (hopefully existing)
+requirements documents (with version number and information where to
+find it).
 
 **Motivation**
 
-Aus Sicht der späteren Nutzung ist die Unterstützung einer fachlichen
-Aufgabe oder Verbesserung der Qualität der eigentliche Beweggrund, ein
-neues System zu schaffen oder ein bestehendes zu modifizieren.
+From the point of view of the end users a system is created or modified
+to improve support of a business activity and/or improve the quality.
 
 **Form**
 
-Kurze textuelle Beschreibung, eventuell in tabellarischer Use-Case Form.
-Sofern vorhanden, sollte die Aufgabenstellung Verweise auf die
-entsprechenden Anforderungsdokumente enthalten.
+Short textual description, probably in tabular use-case format. If
+requirements documents exist this overview should refer to these
+documents.
 
-Halten Sie diese Auszüge so knapp wie möglich und wägen Sie Lesbarkeit
-und Redundanzfreiheit gegeneinander ab.
+Keep these excerpts as short as possible. Balance readability of this
+document with potential redundancy w.r.t to requirements documents.
 
-Siehe [Anforderungen und Ziele](https://docs.arc42.org/section-1/) in
-der online-Dokumentation (auf Englisch!).
+See [Introduction and Goals](https://docs.arc42.org/section-1/) in the
+arc42 documentation.
 
-## Qualitätsziele
+## Quality Goals
 
-**Inhalt**
+**Contents**
 
-Die Top-3 bis Top-5 der Qualitätsanforderungen für die Architektur,
-deren Erfüllung oder Einhaltung den maßgeblichen Stakeholdern besonders
-wichtig sind. Gemeint sind hier wirklich Qualitätsziele, die nicht
-unbedingt mit den Zielen des Projekts übereinstimmen. Beachten Sie den
-Unterschied.
+The top three (max five) quality goals for the architecture whose
+fulfillment is of highest importance to the major stakeholders. We
+really mean quality goals for the architecture. Don’t confuse them with
+project goals. They are not necessarily identical.
 
-Hier ein Überblick möglicher Themen (basierend auf dem ISO 25010
-Standard):
+Consider this overview of potential topics (based upon the ISO 25010
+standard):
 
-![Kategorien von
-Qualitätsanforderungen](images/01_2_iso-25010-topics-DE.drawio.png)
+![Categories of Quality
+Requirements](images/01_2_iso-25010-topics-EN.drawio.png)
 
 **Motivation**
 
-Weil Qualitätsziele grundlegende Architekturentscheidungen oft
-maßgeblich beeinflussen, sollten Sie die für Ihre Stakeholder relevanten
-Qualitätsziele kennen, möglichst konkret und operationalisierbar.
+You should know the quality goals of your most important stakeholders,
+since they will influence fundamental architectural decisions. Make sure
+to be very concrete about these qualities, avoid buzzwords. If you as an
+architect do not know how the quality of your work will be judged…
 
 **Form**
 
-Tabellarische Darstellung der Qualitätsziele mit möglichst konkreten
-Szenarien, geordnet nach Prioritäten.
+A table with quality goals and concrete scenarios, ordered by priorities
 
-## Stakeholder
+## Stakeholders
 
-**Inhalt**
+**Contents**
 
-Expliziter Überblick über die Stakeholder des Systems – über alle
-Personen, Rollen oder Organisationen –, die
+Explicit overview of stakeholders of the system, i.e. all person, roles
+or organizations that
 
--   die Architektur kennen sollten oder
+-   should know the architecture
 
--   von der Architektur überzeugt werden müssen,
+-   have to be convinced of the architecture
 
--   mit der Architektur oder dem Code arbeiten (z.B. Schnittstellen
-    nutzen),
+-   have to work with the architecture or with code
 
--   die Dokumentation der Architektur für ihre eigene Arbeit benötigen,
+-   need the documentation of the architecture for their work
 
--   Entscheidungen über das System und dessen Entwicklung treffen.
+-   have to come up with decisions about the system or its development
 
 **Motivation**
 
-Sie sollten die Projektbeteiligten und -betroffenen kennen, sonst
-erleben Sie später im Entwicklungsprozess Überraschungen. Diese
-Stakeholder bestimmen unter anderem Umfang und Detaillierungsgrad der
-von Ihnen zu leistenden Arbeit und Ergebnisse.
+You should know all parties involved in development of the system or
+affected by the system. Otherwise, you may get nasty surprises later in
+the development process. These stakeholders determine the extent and the
+level of detail of your work and its results.
 
 **Form**
 
-Tabelle mit Rollen- oder Personennamen, sowie deren Erwartungshaltung
-bezüglich der Architektur und deren Dokumentation.
+Table with role names, person names, and their expectations with respect
+to the architecture and its documentation.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 50%" />
+<col style="width: 20%" />
+<col style="width: 40%" />
+<col style="width: 40%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Rolle</th>
-<th style="text-align: left;">Kontakt</th>
-<th style="text-align: left;">Erwartungshaltung</th>
+<th style="text-align: left;">Role/Name</th>
+<th style="text-align: left;">Contact</th>
+<th style="text-align: left;">Expectations</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><p><em>&lt;Rolle-1&gt;</em></p></td>
-<td style="text-align: left;"><p><em>&lt;Kontakt-1&gt;</em></p></td>
-<td style="text-align: left;"><p><em>&lt;Erwartung-1&gt;</em></p></td>
+<td style="text-align: left;"><p><em>&lt;Role-1&gt;</em></p></td>
+<td style="text-align: left;"><p><em>&lt;Contact-1&gt;</em></p></td>
+<td style="text-align: left;"><p><em>&lt;Expectation-1&gt;</em></p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><p><em>&lt;Rolle-2&gt;</em></p></td>
-<td style="text-align: left;"><p><em>&lt;Kontakt-2&gt;</em></p></td>
-<td style="text-align: left;"><p><em>&lt;Erwartung-2&gt;</em></p></td>
+<td style="text-align: left;"><p><em>&lt;Role-2&gt;</em></p></td>
+<td style="text-align: left;"><p><em>&lt;Contact-2&gt;</em></p></td>
+<td style="text-align: left;"><p><em>&lt;Expectation-2&gt;</em></p></td>
 </tr>
 </tbody>
 </table>

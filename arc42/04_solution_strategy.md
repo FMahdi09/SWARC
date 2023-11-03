@@ -1,37 +1,33 @@
-# Lösungsstrategie
+# Solution Strategy
 
-**Inhalt**
+**Contents**
 
-Kurzer Überblick über die grundlegenden Entscheidungen und
-Lösungsansätze, die Entwurf und Implementierung des Systems prägen.
-Hierzu gehören:
+A short summary and explanation of the fundamental decisions and
+solution strategies, that shape system architecture. It includes
 
--   Technologieentscheidungen
+-   technology decisions
 
--   Entscheidungen über die Top-Level-Zerlegung des Systems,
-    beispielsweise die Verwendung gesamthaft prägender Entwurfs- oder
-    Architekturmuster,
+-   decisions about the top-level decomposition of the system, e.g.
+    usage of an architectural pattern or design pattern
 
--   Entscheidungen zur Erreichung der wichtigsten Qualitätsanforderungen
-    sowie
+-   decisions on how to achieve key quality goals
 
--   relevante organisatorische Entscheidungen, beispielsweise für
-    bestimmte Entwicklungsprozesse oder Delegation bestimmter Aufgaben
-    an andere Stakeholder.
+-   relevant organizational decisions, e.g. selecting a development
+    process or delegating certain tasks to third parties.
 
 **Motivation**
 
-Diese wichtigen Entscheidungen bilden wesentliche „Eckpfeiler“ der
-Architektur. Von ihnen hängen viele weitere Entscheidungen oder
-Implementierungsregeln ab.
+These decisions form the cornerstones for your architecture. They are
+the foundation for many other detailed decisions or implementation
+rules.
 
 **Form**
 
-Fassen Sie die zentralen Entwurfsentscheidungen **kurz** zusammen.
-Motivieren Sie, ausgehend von Aufgabenstellung, Qualitätszielen und
-Randbedingungen, was Sie entschieden haben und warum Sie so entschieden
-haben. Vermeiden Sie redundante Beschreibungen und verweisen Sie eher
-auf weitere Ausführungen in Folgeabschnitten.
+Keep the explanations of such key decisions short.
 
-Siehe [Lösungsstrategie](https://docs.arc42.org/section-4/) in der
-online-Dokumentation (auf Englisch!).
+Motivate what was decided and why it was decided that way, based upon
+problem statement, quality goals and key constraints. Refer to details
+in the following sections.
+
+See [Solution Strategy](https://docs.arc42.org/section-4/) in the arc42
+documentation.
