@@ -1,63 +1,39 @@
 # Introduction and Goals
 
-Describes the relevant requirements and the driving forces that software
-architects and development team must consider. These include
+## What is Noodle?
 
--   underlying business goals,
+-   a university management system
 
--   essential features,
+-   used by adiministrators, lecturers and students 
 
--   essential functional requirements,
+-   enables third party providers to host services   
 
--   quality goals for the architecture and
+-   allows its users to participate in and manage classes
 
--   relevant stakeholders and their expectations
+-   provides data such as: total enrollment, student progress, student grades, ...
 
 ## Requirements Overview
 
-**Contents**
+### Students can enroll in a course.
 
-Students can enroll in a course.
+Enables students to easily join (and leave) desired courses without any administrative work needed.
 
-**Motivation**
-
-
-
-**Form**
-
-**Contents**
-
-Faculty member can track attendance and manage grades.
-
-**Motivation**
+### Faculty member can track attendance and manage grades.
 
 Easily manage a lot of students and get a compact overview of a class.
 
-**Form**
+### Lecturer can upload material; student can access said material
 
-**Contents**
+Distribute / Collect files by creating the correct field to upload / download documents. 
+No synchronization or additional communication needed.
 
-Lecturer can upload material; student can access said material
+### Generate general report of attendance and progress of students
 
-**Motivation**
+Allows administrators to get a quick summary of all students, aswell as a more detailed description about individuals.
 
-**Form**
+### Educational Service Providers provide services to students
 
-**Contents**
-
-Generate general report of attendance and progress of students
-
-**Motivation**
-
-**Form**
-
-**Contents**
-
-Educational Service Providers provide services to students
-
-**Motivation**
-
-**Form**
+Provides an API to allow providers to host their services for students without any additional development work needed.
 
 ## Quality Goals
 
